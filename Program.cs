@@ -9,9 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 //DbContext configuration
 builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryAPIAzure") ?? throw new InvalidOperationException("Connection string 'InventoryAPIAzure' not found.")));
-//options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryAPINew") ?? throw new InvalidOperationException("Connection string 'InventoryAPINew' not found.")));      // Azure SQL Connection String
-//options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryAPI") ?? throw new InvalidOperationException("Connection string 'InventoryAPI' not found.")));             // LocalDB Connection String
+        options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryAPIAzure") ?? throw new InvalidOperationException("Connection string 'InventoryAPIAzure' not found.")));  // Azure SQL Connection String
+    
+//options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryAPI") ?? throw new InvalidOperationException("Connection string 'InventoryAPI' not found."))); // LocalDB Connection String
 
 //Repository DI
 builder.Services.AddScoped<IProductsRepository, productsRepository>();
