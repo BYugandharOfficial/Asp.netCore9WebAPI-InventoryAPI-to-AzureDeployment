@@ -1,4 +1,4 @@
-# InventoryAPI
+# InventoryAPI-Azure link
 Diployment to Azure 
 it's is link : https://inventoryapiazure-a2hkame4gggfgsb4.centralindia-01.azurewebsites.net/swagger/index.html
 
