@@ -37,7 +37,7 @@ builder.Services.AddSwaggerGen();
     //options.AddPolicy("AllowAll", policy => 
         
 //        {
-//            policy.WithOrigins("http://localhost:4200").AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+//            policy.WithOrigins("http://localhost:*****").AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
 //        });
 //});
 
